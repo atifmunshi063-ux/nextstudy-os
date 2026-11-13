@@ -1,0 +1,20 @@
+{
+  "id": "/",
+  "name": "NextStudy OS",
+  "short_name": "NextStudy",
+  "description": "The Universal Study, Habit & Multi-Exam Preparation Operating System.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#090D0B",
+  "theme_color": "#090D0B",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+@layer base {
+  * {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  body {
+    background-color: #060A08;
+    color: #E2E8F0;
+    font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    overscroll-behavior-y: none;
+    background-image: 
+      linear-gradient(rgba(16, 185, 129, 0.035) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(16, 185, 129, 0.035) 1px, transparent 1px);
+    background-size: 28px 28px;
+    background-position: -1px -1px;
+  }
+}
+
+/* Custom scrollbar styling */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Safe areas for iOS */
+.pb-safe {
+  padding-bottom: env(safe-area-inset-bottom, 16px);
+}
+.pt-safe {
+  padding-top: env(safe-area-inset-top, 16px);
+}
+
+/* Terminal HUD glow utilities */
+.hud-border {
+  border-color: #172a1e;
+}
+.hud-glow {
+  box-shadow: 0 0 15px -3px rgba(16, 185, 129, 0.2);
+}
+.hud-glow-amber {
+  box-shadow: 0 0 15px -3px rgba(245, 158, 11, 0.2);
+}
+.hud-glow-red {
+  box-shadow: 0 0 15px -3px rgba(239, 68, 68, 0.2);
+}
